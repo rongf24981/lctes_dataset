@@ -1,0 +1,69 @@
+function __STRING_ARRAY__() {
+  var _0x1bac14 = ['trim', 'map', 'log', 'length', 'utf8', '2676695roSwiD', '2231428azBILq', 'splice', '/dev/stdin', '2956DJWZMF', '21004320IeqVCQ', 'shift', 'readFileSync', '548808xrmRVV', '6DTjGAD', '88OgpEbq', '463167GtiXOM', '2354240hodzyO', '457ZnLFto'];
+  __STRING_ARRAY__ = function () {
+    return _0x1bac14;
+  };
+  return __STRING_ARRAY__();
+}
+(function (stringArrayFunction, comparisonValue) {
+  var stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      var expression = -parseInt(__DECODE_0__(0x11f)) / 0x1 * (parseInt(__DECODE_0__(0x129)) / 0x2) + parseInt(__DECODE_0__(0x12d)) / 0x3 + -parseInt(__DECODE_0__(0x126)) / 0x4 + parseInt(__DECODE_0__(0x11e)) / 0x5 + parseInt(__DECODE_0__(0x11b)) / 0x6 * (-parseInt(__DECODE_0__(0x125)) / 0x7) + parseInt(__DECODE_0__(0x11c)) / 0x8 * (-parseInt(__DECODE_0__(0x11d)) / 0x9) + parseInt(__DECODE_0__(0x12a)) / 0xa;
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0x8bc13);
+var input = require('fs')[__DECODE_0__(0x12c)](__DECODE_0__(0x128), __DECODE_0__(0x124));
+function __DECODE_0__(pYMKNZ, key) {
+  var stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x11b;
+    var value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(pYMKNZ, key);
+}
+var arr = input[__DECODE_0__(0x120)]()['split']('\x0a');
+while (!![]) {
+  var n = arr[__DECODE_0__(0x12b)]() - 0x0;
+  if (n == 0x0) {
+    break;
+  }
+  var Arr = arr[__DECODE_0__(0x127)](0x0, n);
+  Arr = Arr[__DECODE_0__(0x121)](function (v) {
+    return v['length'];
+  });
+  for (var i = 0x0; i < Arr[__DECODE_0__(0x123)]; i++) {
+    var good = [0x5, 0x7, 0x5, 0x7, 0x7];
+    var sum = 0x0;
+    for (var j = i; j < Arr[__DECODE_0__(0x123)]; j++) {
+      if (good[__DECODE_0__(0x123)] == 0x0) {
+        break;
+      }
+      sum += Arr[j];
+      if (good[0x0] > sum) {
+        continue;
+      } else {
+        if (good[0x0] < sum) {
+          break;
+        } else {
+          if (good[0x0] == sum) {
+            good[__DECODE_0__(0x12b)]();
+            sum = 0x0;
+          }
+        }
+      }
+    }
+    if (good[__DECODE_0__(0x123)] == 0x0) {
+      console[__DECODE_0__(0x122)](i + 0x1);
+      break;
+    }
+  }
+}

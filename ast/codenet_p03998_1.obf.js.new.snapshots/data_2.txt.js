@@ -1,0 +1,49 @@
+'use strict';
+
+(function (stringArrayFunction, comparisonValue) {
+  const stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      const expression = parseInt(__DECODE_0__(0x7e)) / 0x1 + -parseInt(__DECODE_0__(0x82)) / 0x2 + parseInt(__DECODE_0__(0x81)) / 0x3 + parseInt(__DECODE_0__(0x7c)) / 0x4 + parseInt(__DECODE_0__(0x78)) / 0x5 * (-parseInt(__DECODE_0__(0x7a)) / 0x6) + parseInt(__DECODE_0__(0x74)) / 0x7 * (-parseInt(__DECODE_0__(0x76)) / 0x8) + -parseInt(__DECODE_0__(0x79)) / 0x9 * (-parseInt(__DECODE_0__(0x7d)) / 0xa);
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0xc868f);
+function __STRING_ARRAY__() {
+  const _0x2c8a77 = ['1367070KOuplB', '18wZvgTD', '24yRFxLG', 'utf8', '665104oIpvix', '4675210agTaiV', '20269xdSVwd', 'shift', 'readFileSync', '4196445UkwlEk', '741290UylYjs', '/dev/stdin', '7553AotTkd', 'split', '1744qVafgr', 'toUpperCase'];
+  __STRING_ARRAY__ = function () {
+    return _0x2c8a77;
+  };
+  return __STRING_ARRAY__();
+}
+const main = arg => {
+  const input = arg['trim']()[__DECODE_0__(0x75)]('\x0a');
+  let a = input[0x0][__DECODE_0__(0x75)]('');
+  let b = input[0x1]['split']('');
+  let c = input[0x2][__DECODE_0__(0x75)]('');
+  function shiftCard(man) {
+    let out = eval(man)[__DECODE_0__(0x7f)]();
+    if (out === undefined) {
+      console['log'](man[__DECODE_0__(0x77)]());
+      return;
+    }
+    shiftCard(out);
+  }
+  shiftCard('a');
+};
+function __DECODE_0__(LYUKPU, key) {
+  const stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x74;
+    let value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(LYUKPU, key);
+}
+main(require('fs')[__DECODE_0__(0x80)](__DECODE_0__(0x83), __DECODE_0__(0x7b)));

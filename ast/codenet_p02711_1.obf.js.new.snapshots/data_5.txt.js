@@ -1,0 +1,12 @@
+const Main = input => {
+  const tmp = input["trim"]()["split"]("");
+  let result = "";
+  if (tmp["indexOf"]("7") === -1) {
+    result = "No";
+  } else {
+    result = "Yes";
+  }
+  console["log"](result);
+  return result;
+};
+Main(require("fs")["readFileSync"]("/dev/stdin", "utf8"));

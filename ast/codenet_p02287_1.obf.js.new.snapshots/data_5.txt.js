@@ -1,0 +1,1 @@
+console["log"](require("fs").readFileSync("/dev/stdin", "utf8")["trim"]().split(/[ |\n]/)["slice"](1).map((k, i, a) => "node " + ++i + ": key = " + k + ", " + (i - 1 ? "parent key = " + a[Math["floor"](i / 2) - 1] + ", " : "") + (i * 2 - 1 < a.length ? "left key = " + a[i * 2 - 1] + ", " : "") + (i * 2 < a["length"] ? "right key = " + a[i * 2] + ", " : ""))["join"]("\n"));

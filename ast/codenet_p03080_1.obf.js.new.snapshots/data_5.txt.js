@@ -1,0 +1,15 @@
+function Main(input) {
+  let Red = 0;
+  let Blue = 0;
+  const input_line = input["split"]("\n");
+  inputS = input_line[1]["split"]("");
+  for (i = 0; i < inputS["length"]; i++) {
+    if (inputS[i] === "R") {
+      Red++;
+    } else {
+      Blue++;
+    }
+  }
+  console["log"](Red > Blue ? "Yes" : "No");
+}
+Main(require("fs")["readFileSync"]("/dev/stdin", "utf8"));

@@ -1,0 +1,71 @@
+(function (stringArrayFunction, comparisonValue) {
+  const stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      const expression = parseInt(__DECODE_0__(0x18d)) / 0x1 * (-parseInt(__DECODE_0__(0x19a)) / 0x2) + -parseInt(__DECODE_0__(0x18f)) / 0x3 * (-parseInt(__DECODE_0__(0x197)) / 0x4) + -parseInt(__DECODE_0__(0x18c)) / 0x5 + -parseInt(__DECODE_0__(0x18e)) / 0x6 * (-parseInt(__DECODE_0__(0x18b)) / 0x7) + parseInt(__DECODE_0__(0x192)) / 0x8 + -parseInt(__DECODE_0__(0x199)) / 0x9 + parseInt(__DECODE_0__(0x198)) / 0xa;
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0x23276);
+const input = require('fs')[__DECODE_0__(0x191)](__DECODE_0__(0x196), 'utf8');
+function __DECODE_0__(ofmuAf, key) {
+  const stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x188;
+    let value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(ofmuAf, key);
+}
+function __STRING_ARRAY__() {
+  const _0x3f0be7 = ['1378440kNmqGP', '2193786xMqFUQ', '3556EioEAG', 'split', 'log', 'push', '791Zefutk', '889940DlTUcl', '23zwVIww', '18rExVlT', '837mdPyhv', 'map', 'readFileSync', '1790080ANgePJ', 'max', 'forEach', 'pop', '/dev/stdin', '3508HjYPLO'];
+  __STRING_ARRAY__ = function () {
+    return _0x3f0be7;
+  };
+  return __STRING_ARRAY__();
+}
+(input => {
+  const rows = input[__DECODE_0__(0x188)]('\x0a');
+  const [N, M, Q] = rows[0x0]['split']('\x20')[__DECODE_0__(0x190)](Number);
+  const A = [];
+  for (let i = 0x0; i < Q; i++) {
+    A[i] = rows[i + 0x1][__DECODE_0__(0x188)]('\x20')[__DECODE_0__(0x190)](Number);
+  }
+  const ss = [];
+  const s = [];
+  let d = 0x0;
+  let v = 0x0;
+  while (v !== undefined) {
+    if (d === N) {
+      ss['push']([...s]);
+      s[__DECODE_0__(0x195)]();
+      v++;
+      d--;
+    } else {
+      if (v >= M) {
+        v = s['pop']();
+        d--;
+      } else {
+        s[__DECODE_0__(0x18a)](v + 0x1);
+        d++;
+      }
+    }
+  }
+  let res = 0x0;
+  ss['forEach'](s => {
+    let sum = 0x0;
+    A[__DECODE_0__(0x194)](a => {
+      if (s[a[0x1] - 0x1] - s[a[0x0] - 0x1] === a[0x2]) {
+        sum += a[0x3];
+      }
+    });
+    res = Math[__DECODE_0__(0x193)](res, sum);
+  });
+  console[__DECODE_0__(0x189)](res);
+})(input);

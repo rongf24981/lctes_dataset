@@ -1,0 +1,74 @@
+(function (stringArrayFunction, comparisonValue) {
+  var stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      var expression = -parseInt(__DECODE_0__(0x1de)) / 0x1 + parseInt(__DECODE_0__(0x1dd)) / 0x2 * (parseInt(__DECODE_0__(0x1e2)) / 0x3) + -parseInt(__DECODE_0__(0x1e0)) / 0x4 + parseInt(__DECODE_0__(0x1ea)) / 0x5 * (parseInt(__DECODE_0__(0x1df)) / 0x6) + parseInt(__DECODE_0__(0x1e7)) / 0x7 + parseInt(__DECODE_0__(0x1da)) / 0x8 + -parseInt(__DECODE_0__(0x1db)) / 0x9;
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0x6752d);
+function prime(max) {
+  var arr = [];
+  for (var i = 0x0; i <= max; i++) {
+    arr[i] = i;
+  }
+  arr[0x0] = ![];
+  arr[0x1] = ![];
+  var sqrt = Math[__DECODE_0__(0x1e1)](Math[__DECODE_0__(0x1e8)](max));
+  for (var i = 0x2; i <= sqrt; i++) {
+    if (arr[i] == ![]) {
+      continue;
+    }
+    for (var j = i + i; j <= max; j += i) {
+      arr[j] = ![];
+    }
+  }
+  var result = {};
+  for (var i = 0x0; i <= max; i++) {
+    if (arr[i] !== ![]) {
+      result[arr[i]] = !![];
+    }
+  }
+  return result;
+}
+function __DECODE_0__(QEbEYe, key) {
+  var stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x1da;
+    var value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(QEbEYe, key);
+}
+var p = prime(0xf423f);
+var input = require('fs')[__DECODE_0__(0x1e5)](__DECODE_0__(0x1dc), __DECODE_0__(0x1e6));
+function __STRING_ARRAY__() {
+  var _0x2dd763 = ['shift', '464705kPhTEP', '3804920HVgvtT', '5662089sbuljC', '/dev/stdin', '12pvlgwl', '473999HiPIqq', '42KBPoLu', '2212784oSuttM', 'floor', '334317eZuxJh', 'trim', 'map', 'readFileSync', 'utf8', '1992851TDedRA', 'sqrt'];
+  __STRING_ARRAY__ = function () {
+    return _0x2dd763;
+  };
+  return __STRING_ARRAY__();
+}
+var Arr = input[__DECODE_0__(0x1e3)]()['split']('\x0a');
+while (!![]) {
+  var v = Arr[__DECODE_0__(0x1e9)]();
+  if (v == '0\x200\x200') {
+    break;
+  }
+  var adn = v['split']('\x20')[__DECODE_0__(0x1e4)](Number);
+  var cnt = 0x0;
+  var sum = adn[0x0] - adn[0x1];
+  while (cnt != adn[0x2]) {
+    sum += adn[0x1];
+    if (p['hasOwnProperty'](sum)) {
+      cnt++;
+    }
+  }
+  console['log'](sum);
+}

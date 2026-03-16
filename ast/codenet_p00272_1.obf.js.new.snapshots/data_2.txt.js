@@ -1,0 +1,48 @@
+(function (stringArrayFunction, comparisonValue) {
+  var stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      var expression = parseInt(__DECODE_0__(0x177)) / 0x1 * (-parseInt(__DECODE_0__(0x170)) / 0x2) + parseInt(__DECODE_0__(0x16e)) / 0x3 * (-parseInt(__DECODE_0__(0x16f)) / 0x4) + -parseInt(__DECODE_0__(0x16c)) / 0x5 * (-parseInt(__DECODE_0__(0x171)) / 0x6) + -parseInt(__DECODE_0__(0x167)) / 0x7 * (parseInt(__DECODE_0__(0x173)) / 0x8) + parseInt(__DECODE_0__(0x175)) / 0x9 * (parseInt(__DECODE_0__(0x176)) / 0xa) + parseInt(__DECODE_0__(0x16a)) / 0xb * (parseInt(__DECODE_0__(0x174)) / 0xc) + parseInt(__DECODE_0__(0x169)) / 0xd * (-parseInt(__DECODE_0__(0x16b)) / 0xe);
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0x8f8f9);
+var input = require('fs')[__DECODE_0__(0x165)](__DECODE_0__(0x16d), __DECODE_0__(0x166));
+var Arr = input['trim']()[__DECODE_0__(0x168)]('\x0a');
+function __DECODE_0__(HPAZLH, key) {
+  var stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x165;
+    var value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(HPAZLH, key);
+}
+function __STRING_ARRAY__() {
+  var _0x2c1cd7 = ['270vWyZAJ', '1vbclSK', 'readFileSync', 'utf8', '70fMHqfB', 'split', '9100gileQU', '3965533ncENps', '5712SmvfUQ', '570UxNDMu', '/dev/stdin', '413799pmAhAO', '4uDIxwV', '1154166doFSdf', '46758PcZzXJ', 'log', '41864nZhlQr', '24whiWHK', '10521HVargK'];
+  __STRING_ARRAY__ = function () {
+    return _0x2c1cd7;
+  };
+  return __STRING_ARRAY__();
+}
+for (var i = 0x0; i < 0x4; i++) {
+  var arr = Arr[i][__DECODE_0__(0x168)]('\x20')['map'](Number);
+  if (arr[0x0] == 0x1) {
+    console['log'](arr[0x1] * 0x1770);
+  }
+  if (arr[0x0] == 0x2) {
+    console[__DECODE_0__(0x172)](arr[0x1] * 0xfa0);
+  }
+  if (arr[0x0] == 0x3) {
+    console[__DECODE_0__(0x172)](arr[0x1] * 0xbb8);
+  }
+  if (arr[0x0] == 0x4) {
+    console['log'](arr[0x1] * 0x7d0);
+  }
+}

@@ -1,0 +1,74 @@
+(function (stringArrayFunction, comparisonValue) {
+  var stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      var expression = parseInt(__DECODE_0__(0x77)) / 0x1 + -parseInt(__DECODE_0__(0x70)) / 0x2 + parseInt(__DECODE_0__(0x73)) / 0x3 + -parseInt(__DECODE_0__(0x76)) / 0x4 + -parseInt(__DECODE_0__(0x75)) / 0x5 * (-parseInt(__DECODE_0__(0x7b)) / 0x6) + -parseInt(__DECODE_0__(0x6f)) / 0x7 * (-parseInt(__DECODE_0__(0x79)) / 0x8) + -parseInt(__DECODE_0__(0x71)) / 0x9 * (-parseInt(__DECODE_0__(0x72)) / 0xa);
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0xd795c);
+var toInt = x => parseInt(x, 0xa);
+var toIntArr = arr => arr[__DECODE_0__(0x6e)](x => toInt(x));
+var abs = x => x > 0x0 ? x : -x;
+function min() {
+  var rest = arguments;
+  var val = rest[0x0];
+  for (var i = 0x1; i < rest[__DECODE_0__(0x78)]; i++) {
+    if (rest[i] < val) {
+      val = rest[i];
+    }
+  }
+  return val;
+}
+function max() {
+  var rest = arguments;
+  var val = rest[0x0];
+  for (var i = 0x1; i < rest[__DECODE_0__(0x78)]; i++) {
+    if (rest[i] > val) {
+      val = rest[i];
+    }
+  }
+  return val;
+}
+Main(require('fs')[__DECODE_0__(0x74)]('/dev/stdin', __DECODE_0__(0x7c)));
+function __DECODE_0__(ysPxER, key) {
+  var stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x6e;
+    var value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(ysPxER, key);
+}
+function __STRING_ARRAY__() {
+  var _0xbabc77 = ['5963516VpqjDb', '150618usMYeE', 'length', '56ypXzRh', 'split', '9146910bUuspy', 'utf8', 'map', '736113MUDChD', '2822314NwIteh', '5020020GegqLO', '10wzfxGS', '2448228dBQCdi', 'readFileSync', '5tNEbmW'];
+  __STRING_ARRAY__ = function () {
+    return _0xbabc77;
+  };
+  return __STRING_ARRAY__();
+}
+function Main(input) {
+  var input = input[__DECODE_0__(0x7a)]('\x0a');
+  var n = toInt(input[0x0]);
+  var as = toIntArr(input[0x1]['split']('\x20'));
+  var sum = 0x0;
+  for (var i = 0x0; i < n; i++) {
+    sum += as[i];
+  }
+  var bs = as[__DECODE_0__(0x6e)]((el, ind, arr) => abs(sum - n * el));
+  var ans = 0x0;
+  var min = bs[0x0];
+  for (var i = 0x1; i < n; i++) {
+    if (bs[i] < min) {
+      min = bs[i];
+      ans = i;
+    }
+  }
+  console['log'](ans);
+}

@@ -1,0 +1,50 @@
+(function (stringArrayFunction, comparisonValue) {
+  var stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      var expression = parseInt(__DECODE_0__(0xb8)) / 0x1 * (-parseInt(__DECODE_0__(0xbb)) / 0x2) + parseInt(__DECODE_0__(0xbc)) / 0x3 + parseInt(__DECODE_0__(0xbd)) / 0x4 * (parseInt(__DECODE_0__(0xb6)) / 0x5) + parseInt(__DECODE_0__(0xb7)) / 0x6 * (parseInt(__DECODE_0__(0xb4)) / 0x7) + -parseInt(__DECODE_0__(0xb5)) / 0x8 * (-parseInt(__DECODE_0__(0xb9)) / 0x9) + parseInt(__DECODE_0__(0xbe)) / 0xa + -parseInt(__DECODE_0__(0xba)) / 0xb;
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0xed38f);
+m = ('' + require('fs')[__DECODE_0__(0xb3)](0x0))['split']`
+`;
+n = m[a = 0x0];
+s = m[0x1];
+function __STRING_ARRAY__() {
+  var _0x5c48c4 = ['readFileSync', '652722tYjwhp', '10321192oKRZTA', '15ZnDFpM', '90YbuGJH', '1MVZANj', '9HqRjvu', '26622332yWSzxN', '3807644hnPTjO', '5099154YEnioD', '456236WligjL', '5649630DcFvOb'];
+  __STRING_ARRAY__ = function () {
+    return _0x5c48c4;
+  };
+  return __STRING_ARRAY__();
+}
+function __DECODE_0__(BMqjku, key) {
+  var stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0xb3;
+    var value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(BMqjku, key);
+}
+for (b = 0x1 << n; b--;) {
+  u = 0x0;
+  for (i = n; i--;) {
+    u = b & 0x1 << i ? s[i] + u : u + s[i];
+  }
+  m[u] = -~m[u];
+}
+for (b = 0x1 << n; b--;) {
+  u = 0x0;
+  for (i = n; i--;) {
+    u = b & 0x1 << i ? s[0x2 * n + ~i] + u : u + s[0x2 * n + ~i];
+  }
+  a += ~~m[u];
+}
+console['log'](a);

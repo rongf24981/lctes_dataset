@@ -1,0 +1,56 @@
+'use strict';
+
+function __STRING_ARRAY__() {
+  const _0x1e17cd = ['push', '1950495KOAOSJ', 'map', '4uJGlSX', '6KgWtKn', '9XHKjCj', '442503vPSgFl', 'split', '/dev/stdin', '4554970GJMKvY', '764776REaeZX', 'readFileSync', '249261IQpIkp', '2034858voASfJ', '1082052nAEuwx', 'length'];
+  __STRING_ARRAY__ = function () {
+    return _0x1e17cd;
+  };
+  return __STRING_ARRAY__();
+}
+(function (stringArrayFunction, comparisonValue) {
+  const stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      const expression = -parseInt(__DECODE_0__(0x113)) / 0x1 + -parseInt(__DECODE_0__(0x10b)) / 0x2 * (-parseInt(__DECODE_0__(0x10d)) / 0x3) + -parseInt(__DECODE_0__(0x10a)) / 0x4 * (parseInt(__DECODE_0__(0x108)) / 0x5) + parseInt(__DECODE_0__(0x115)) / 0x6 + -parseInt(__DECODE_0__(0x114)) / 0x7 + parseInt(__DECODE_0__(0x111)) / 0x8 * (parseInt(__DECODE_0__(0x10c)) / 0x9) + parseInt(__DECODE_0__(0x110)) / 0xa;
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0x3b8ad);
+function __DECODE_0__(fPUmjV, key) {
+  const stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x106;
+    let value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(fPUmjV, key);
+}
+function main(input) {
+  input = input['split'](/\r?\n/);
+  input = input[0x1][__DECODE_0__(0x10e)]('\x20')[__DECODE_0__(0x109)](v => ~~v)['sort']((a, b) => b - a);
+  let ans = 0x0;
+  let sticks = [];
+  let prev = input[0x0];
+  for (let i = 0x1; i < input['length']; i++) {
+    if (prev == input[i]) {
+      sticks[__DECODE_0__(0x107)](prev);
+      sticks[__DECODE_0__(0x107)](input[i]);
+      prev = 0x0;
+    } else {
+      prev = input[i];
+    }
+  }
+  if (sticks[__DECODE_0__(0x106)] >= 0x4) {
+    ans = sticks[0x0] * sticks[0x3];
+    console['log'](ans);
+  } else {
+    console['log'](0x0);
+  }
+}
+main(require('fs')[__DECODE_0__(0x112)](__DECODE_0__(0x10f), 'utf8'));

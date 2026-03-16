@@ -1,0 +1,41 @@
+'use strict';
+
+function __STRING_ARRAY__() {
+  const _0x2af84b = ['utf8', 'split', '2420472DNJnfv', '3249967OcjYkE', '8PQLkse', 'log', '872136eCLGWb', '18843QIoktE', '180xlANTS', '79YVdaUe', '925580RzpFNm', '21442qdEQeb', '24DEHBTU', '845009hLadpG'];
+  __STRING_ARRAY__ = function () {
+    return _0x2af84b;
+  };
+  return __STRING_ARRAY__();
+}
+(function (stringArrayFunction, comparisonValue) {
+  const stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      const expression = -parseInt(__DECODE_0__(0x83)) / 0x1 * (-parseInt(__DECODE_0__(0x85)) / 0x2) + parseInt(__DECODE_0__(0x81)) / 0x3 + -parseInt(__DECODE_0__(0x8a)) / 0x4 + -parseInt(__DECODE_0__(0x84)) / 0x5 * (parseInt(__DECODE_0__(0x86)) / 0x6) + parseInt(__DECODE_0__(0x8b)) / 0x7 * (-parseInt(__DECODE_0__(0x8c)) / 0x8) + parseInt(__DECODE_0__(0x8e)) / 0x9 + parseInt(__DECODE_0__(0x82)) / 0xa * (parseInt(__DECODE_0__(0x87)) / 0xb);
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0x7fb0f);
+function Main(inputs) {
+  const input = inputs[__DECODE_0__(0x89)]('\x0a');
+  const a = Number(input[0x0][__DECODE_0__(0x89)]('\x20')[0x0]);
+  const b = Number(input[0x0]['split']('\x20')[0x1]);
+  const k = Number(input[0x0][__DECODE_0__(0x89)]('\x20')[0x2]);
+  console[__DECODE_0__(0x8d)](a > k ? a - k : 0x0, a + b > k ? a + b - k : 0x0);
+}
+function __DECODE_0__(ufIjfZ, key) {
+  const stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x81;
+    let value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(ufIjfZ, key);
+}
+Main(require('fs')['readFileSync']('/dev/stdin', __DECODE_0__(0x88)));

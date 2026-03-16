@@ -1,0 +1,52 @@
+'use strict';
+
+function __STRING_ARRAY__() {
+  const _0x180a48 = ['2089qDgSUb', 'length', '48vmyjKO', '3620CBODFL', 'trim', 'readFileSync', 'utf8', '12852917kNIeQY', '165VfrNhn', '2331dwlNIw', 'log', '764qVLXRc', '1842127uCfCYD', '134694xcUABa', '35810LRLkSB', 'split', '315240CVRdWK'];
+  __STRING_ARRAY__ = function () {
+    return _0x180a48;
+  };
+  return __STRING_ARRAY__();
+}
+function __DECODE_0__(cIzOwP, key) {
+  const stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x1e2;
+    let value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(cIzOwP, key);
+}
+(function (stringArrayFunction, comparisonValue) {
+  const stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      const expression = -parseInt(__DECODE_0__(0x1f2)) / 0x1 * (parseInt(__DECODE_0__(0x1ec)) / 0x2) + -parseInt(__DECODE_0__(0x1e3)) / 0x3 * (parseInt(__DECODE_0__(0x1e4)) / 0x4) + -parseInt(__DECODE_0__(0x1e9)) / 0x5 * (-parseInt(__DECODE_0__(0x1ee)) / 0x6) + parseInt(__DECODE_0__(0x1ed)) / 0x7 + parseInt(__DECODE_0__(0x1f1)) / 0x8 + parseInt(__DECODE_0__(0x1ea)) / 0x9 * (-parseInt(__DECODE_0__(0x1ef)) / 0xa) + parseInt(__DECODE_0__(0x1e8)) / 0xb;
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0x73341);
+const main = arg => {
+  const times = arg[__DECODE_0__(0x1e5)]()['split']('\x0a')['map'](n => parseInt(n));
+  let min = 0xa;
+  let sum = 0x0;
+  for (let i = 0x0; i < times[__DECODE_0__(0x1e2)]; i++) {
+    let digitOne = String(times[i])[__DECODE_0__(0x1f0)]('');
+    digitOne = parseInt(digitOne[digitOne[__DECODE_0__(0x1e2)] - 0x1]);
+    let digitMinus = 0xa - digitOne;
+    sum += parseInt(times[i]);
+    if (digitMinus !== 0xa) {
+      sum += digitMinus;
+    }
+    if (digitMinus !== 0xa && digitOne < min) {
+      min = digitOne;
+    }
+  }
+  console[__DECODE_0__(0x1eb)](parseInt(sum - (0xa - min)));
+};
+main(require('fs')[__DECODE_0__(0x1e6)]('/dev/stdin', __DECODE_0__(0x1e7)));

@@ -1,0 +1,42 @@
+function __DECODE_0__(GThxXw, key) {
+  var stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x140;
+    var value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(GThxXw, key);
+}
+function __STRING_ARRAY__() {
+  var _0x462a5d = ['124716QtscsV', '6tAwAmn', '227020senYrY', '1379015MegSUw', '819qbIItc', '40BBzozh', '2728gagHvl', '11854ulBosX', 'split', '144HFksVj', '10qdxARP', 'utf8', '6MkXFcq', 'map', '/dev/stdin', 'log', 'readFileSync', '862743SvhFUK', '828640XULBEX'];
+  __STRING_ARRAY__ = function () {
+    return _0x462a5d;
+  };
+  return __STRING_ARRAY__();
+}
+(function (stringArrayFunction, comparisonValue) {
+  var stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      var expression = -parseInt(__DECODE_0__(0x148)) / 0x1 * (parseInt(__DECODE_0__(0x146)) / 0x2) + parseInt(__DECODE_0__(0x14d)) / 0x3 * (parseInt(__DECODE_0__(0x143)) / 0x4) + -parseInt(__DECODE_0__(0x140)) / 0x5 * (parseInt(__DECODE_0__(0x142)) / 0x6) + -parseInt(__DECODE_0__(0x152)) / 0x7 + -parseInt(__DECODE_0__(0x147)) / 0x8 * (-parseInt(__DECODE_0__(0x14a)) / 0x9) + parseInt(__DECODE_0__(0x14b)) / 0xa * (-parseInt(__DECODE_0__(0x144)) / 0xb) + parseInt(__DECODE_0__(0x141)) / 0xc * (parseInt(__DECODE_0__(0x145)) / 0xd);
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0x1ddbf);
+var input = require('fs')[__DECODE_0__(0x151)](__DECODE_0__(0x14f), __DECODE_0__(0x14c));
+var [m, f, b] = input['trim']()[__DECODE_0__(0x149)]('\x20')[__DECODE_0__(0x14e)](Number);
+if (m >= b) {
+  console[__DECODE_0__(0x150)](0x0);
+} else {
+  if (m + f < b) {
+    console['log']('NA');
+  } else {
+    console['log'](b - m);
+  }
+}

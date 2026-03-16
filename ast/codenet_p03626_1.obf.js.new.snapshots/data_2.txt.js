@@ -1,0 +1,71 @@
+(function (stringArrayFunction, comparisonValue) {
+  var stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      var expression = -parseInt(__DECODE_0__(0xe0)) / 0x1 + parseInt(__DECODE_0__(0xdd)) / 0x2 * (parseInt(__DECODE_0__(0xe7)) / 0x3) + -parseInt(__DECODE_0__(0xdc)) / 0x4 + -parseInt(__DECODE_0__(0xde)) / 0x5 * (-parseInt(__DECODE_0__(0xe4)) / 0x6) + parseInt(__DECODE_0__(0xe3)) / 0x7 + -parseInt(__DECODE_0__(0xe8)) / 0x8 * (parseInt(__DECODE_0__(0xe9)) / 0x9) + parseInt(__DECODE_0__(0xe2)) / 0xa;
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0x5510e);
+function main(input) {
+  var tmp = input[__DECODE_0__(0xe5)](/\r\n|\r|\n/);
+  var N = Number(tmp[0x0]);
+  var S = tmp[0x1][__DECODE_0__(0xe5)]('');
+  var res;
+  var i = 0x0;
+  var isYoko;
+  if (S[i] == S[i + 0x1]) {
+    res = 0x6;
+    i = i + 0x2;
+    isYoko = !![];
+  } else {
+    res = 0x3;
+    i++;
+    isYoko = ![];
+  }
+  for (; i < N - 0x1; i++) {
+    if (S[i] == S[i + 0x1]) {
+      if (isYoko) {
+        res = res * 0x3;
+      } else {
+        res = res * 0x2;
+      }
+      i++;
+      isYoko = !![];
+    } else {
+      if (!isYoko) {
+        res = res * 0x2;
+      }
+      isYoko = ![];
+    }
+  }
+  if (i < N) {
+    if (!isYoko) {
+      res = res * 0x2;
+    }
+  }
+  console[__DECODE_0__(0xe6)](res % 0x3b9aca07);
+}
+function __DECODE_0__(WYqbwo, key) {
+  var stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0xdc;
+    var value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(WYqbwo, key);
+}
+function __STRING_ARRAY__() {
+  var _0x419529 = ['log', '279417xUseZT', '223192FlWtwB', '99PYYjvW', '2429432McmhIq', '8FuOnyu', '445ZFdYnT', 'readFileSync', '590195SXUNpv', '/dev/stdin', '7355950nyQHTc', '1002190qoEfNe', '40554RSFJeU', 'split'];
+  __STRING_ARRAY__ = function () {
+    return _0x419529;
+  };
+  return __STRING_ARRAY__();
+}
+main(require('fs')[__DECODE_0__(0xdf)](__DECODE_0__(0xe1), 'utf8'));

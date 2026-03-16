@@ -1,0 +1,48 @@
+(function (stringArrayFunction, comparisonValue) {
+  var stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      var expression = -parseInt(__DECODE_0__(0x1f3)) / 0x1 * (parseInt(__DECODE_0__(0x1fa)) / 0x2) + parseInt(__DECODE_0__(0x1f0)) / 0x3 * (parseInt(__DECODE_0__(0x1f4)) / 0x4) + -parseInt(__DECODE_0__(0x200)) / 0x5 * (-parseInt(__DECODE_0__(0x1f9)) / 0x6) + -parseInt(__DECODE_0__(0x1fe)) / 0x7 * (parseInt(__DECODE_0__(0x1ff)) / 0x8) + -parseInt(__DECODE_0__(0x1f1)) / 0x9 * (-parseInt(__DECODE_0__(0x1f6)) / 0xa) + parseInt(__DECODE_0__(0x1fd)) / 0xb * (parseInt(__DECODE_0__(0x1f2)) / 0xc) + parseInt(__DECODE_0__(0x1f8)) / 0xd;
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0x66257);
+var input = require('fs')[__DECODE_0__(0x203)](__DECODE_0__(0x1fb), __DECODE_0__(0x1f7));
+var arr = input['trim']()['split']('\x0a');
+var n = arr[__DECODE_0__(0x1f5)]() - 0x0;
+var p = arr[__DECODE_0__(0x1f5)]()[__DECODE_0__(0x202)]('\x20')[__DECODE_0__(0x201)](Number);
+var ans = 0x0;
+function __DECODE_0__(JiRDxp, key) {
+  var stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x1f0;
+    var value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(JiRDxp, key);
+}
+for (var i = 0x1; i <= 0x64; i++) {
+  var cnt = 0x0;
+  p[__DECODE_0__(0x1fc)](v => {
+    if (v >= i) {
+      cnt++;
+    }
+  });
+  if (cnt >= i) {
+    ans = i;
+  }
+}
+function __STRING_ARRAY__() {
+  var _0x1059cc = ['403672xuDQkj', '181705SBnLmG', 'map', 'split', 'readFileSync', '1626oLNEkm', '57195MuBjUN', '4164XWMqkt', '678728zbIdKq', '4504WHnNwl', 'shift', '150HaZcWn', 'utf8', '1835678zazABR', '6MfmORF', '2lBcRvy', '/dev/stdin', 'forEach', '8382lvFQSb', '7BrpXhS'];
+  __STRING_ARRAY__ = function () {
+    return _0x1059cc;
+  };
+  return __STRING_ARRAY__();
+}
+console['log'](ans);

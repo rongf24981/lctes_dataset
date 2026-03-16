@@ -1,0 +1,41 @@
+function __DECODE_0__(RlOduD, key) {
+  var stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0xf2;
+    var value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(RlOduD, key);
+}
+(function (stringArrayFunction, comparisonValue) {
+  var stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      var expression = parseInt(__DECODE_0__(0xf3)) / 0x1 * (parseInt(__DECODE_0__(0x101)) / 0x2) + parseInt(__DECODE_0__(0x103)) / 0x3 * (-parseInt(__DECODE_0__(0x105)) / 0x4) + parseInt(__DECODE_0__(0xff)) / 0x5 + -parseInt(__DECODE_0__(0xf2)) / 0x6 * (-parseInt(__DECODE_0__(0xfc)) / 0x7) + -parseInt(__DECODE_0__(0xfe)) / 0x8 * (-parseInt(__DECODE_0__(0xf9)) / 0x9) + parseInt(__DECODE_0__(0xf6)) / 0xa * (parseInt(__DECODE_0__(0x100)) / 0xb) + -parseInt(__DECODE_0__(0xfb)) / 0xc;
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0xdb237);
+function Main(inp) {
+  var input = inp[__DECODE_0__(0xf7)]('\x0a')[0x0][__DECODE_0__(0xf7)]('\x20')[__DECODE_0__(0xfa)](function (n) {
+    return Number(n);
+  });
+  var start = Math[__DECODE_0__(0x104)](input[0x0], input[0x2]);
+  var end = Math[__DECODE_0__(0xf8)](input[0x1], input[0x3]);
+  var overlap = Math[__DECODE_0__(0x104)](0x0, end - start);
+  console[__DECODE_0__(0xf5)](overlap);
+}
+function __STRING_ARRAY__() {
+  var _0x19469f = ['max', '596AhAIck', '30QvzgnM', '4mOkJDA', 'readFileSync', 'log', '4260AcUHdN', 'split', 'min', '45414vYWspe', 'map', '20467020UcOOFu', '849198zuvCGX', '/dev/stdin', '368NRvnXi', '6887955NFrwhQ', '41371yFkwyI', '134898bmgwkp', 'utf8', '29901vxEpgi'];
+  __STRING_ARRAY__ = function () {
+    return _0x19469f;
+  };
+  return __STRING_ARRAY__();
+}
+Main(require('fs')[__DECODE_0__(0xf4)](__DECODE_0__(0xfd), __DECODE_0__(0x102)));

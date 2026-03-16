@@ -1,0 +1,55 @@
+(function (stringArrayFunction, comparisonValue) {
+  var stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      var expression = parseInt(__DECODE_0__(0x96)) / 0x1 * (parseInt(__DECODE_0__(0x8b)) / 0x2) + -parseInt(__DECODE_0__(0x88)) / 0x3 * (-parseInt(__DECODE_0__(0x87)) / 0x4) + parseInt(__DECODE_0__(0x8e)) / 0x5 + -parseInt(__DECODE_0__(0x90)) / 0x6 + parseInt(__DECODE_0__(0x99)) / 0x7 + parseInt(__DECODE_0__(0x85)) / 0x8 * (-parseInt(__DECODE_0__(0x98)) / 0x9) + -parseInt(__DECODE_0__(0x86)) / 0xa;
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0xf31a9);
+var input = require('fs')[__DECODE_0__(0x8d)](__DECODE_0__(0x8c), 'utf8');
+var Arr = input[__DECODE_0__(0x91)]()[__DECODE_0__(0x92)]('\x0a');
+var AL = Arr[__DECODE_0__(0x94)]();
+var abc = ['', __DECODE_0__(0x97), 'abc', 'def', 'ghi', 'jkl', 'mno', __DECODE_0__(0x95), 'tuv', __DECODE_0__(0x93)];
+abc = abc[__DECODE_0__(0x8f)](function (v) {
+  return v['split']('');
+});
+function __DECODE_0__(xQbqYr, key) {
+  var stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x85;
+    var value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(xQbqYr, key);
+}
+for (var i = 0x0; i < AL; i++) {
+  var arr = Arr[i][__DECODE_0__(0x92)]('')['map'](Number);
+  var str = '';
+  var a = '';
+  var n = -0x1;
+  arr[__DECODE_0__(0x8a)](function (v) {
+    if (v > 0x0) {
+      n++;
+      a = abc[v][n % abc[v][__DECODE_0__(0x89)]];
+    } else {
+      str += a;
+      n = -0x1;
+      a = '';
+    }
+  });
+  console[__DECODE_0__(0x9a)](str);
+}
+function __STRING_ARRAY__() {
+  var _0x2712c2 = ['8nANJcS', '2397540YtlrbS', '4bbRYhX', '1716807mdTjxz', 'length', 'forEach', '8732avegui', '/dev/stdin', 'readFileSync', '8644420BSklMC', 'map', '8575248pRdwHA', 'trim', 'split', 'wxyz', 'shift', 'pqrs', '103DPgeJq', '.,!?\x20', '13085001TbGonT', '9574271HQQPGW', 'log'];
+  __STRING_ARRAY__ = function () {
+    return _0x2712c2;
+  };
+  return __STRING_ARRAY__();
+}

@@ -1,0 +1,55 @@
+(function (stringArrayFunction, comparisonValue) {
+  var stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      var expression = parseInt(__DECODE_0__(0x1b7)) / 0x1 + parseInt(__DECODE_0__(0x1b1)) / 0x2 * (parseInt(__DECODE_0__(0x1b2)) / 0x3) + parseInt(__DECODE_0__(0x1b6)) / 0x4 * (parseInt(__DECODE_0__(0x1a4)) / 0x5) + parseInt(__DECODE_0__(0x1a9)) / 0x6 + -parseInt(__DECODE_0__(0x1b5)) / 0x7 * (-parseInt(__DECODE_0__(0x1b4)) / 0x8) + -parseInt(__DECODE_0__(0x1a6)) / 0x9 + parseInt(__DECODE_0__(0x1ab)) / 0xa * (-parseInt(__DECODE_0__(0x1b3)) / 0xb);
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0x85abe);
+var lines = [];
+var readline = require(__DECODE_0__(0x1ae));
+var rl = readline[__DECODE_0__(0x1a7)]({
+  'input': process[__DECODE_0__(0x1af)],
+  'output': process[__DECODE_0__(0x1b0)]
+});
+function __STRING_ARRAY__() {
+  var _0xa119c3 = ['log', '5907402XEcwrl', 'createInterface', 'floor', '2003994qkdRIG', 'close', '10YULmaX', 'line', 'split', 'readline', 'stdin', 'stdout', '4894FCJNyb', '1209lyOjnv', '17813158tISwts', '572632qNYflA', '49SBhRhU', '4IfwDsc', '898136mJJNcr', '519725DDkiIs'];
+  __STRING_ARRAY__ = function () {
+    return _0xa119c3;
+  };
+  return __STRING_ARRAY__();
+}
+rl['on'](__DECODE_0__(0x1ac), function (x) {
+  lines['push'](x);
+});
+function __DECODE_0__(VJODjb, key) {
+  var stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x1a4;
+    var value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(VJODjb, key);
+}
+rl['on'](__DECODE_0__(0x1aa), function () {
+  var N = Number(lines[0x0][__DECODE_0__(0x1ad)]('\x20')[0x0]);
+  var K = Number(lines[0x0]['split']('\x20')[0x1]);
+  var ans = 0x0;
+  for (var i = 0x1; i <= K; i++) {
+    if (i * 0x2 % K === 0x0) {
+      if (0x1 <= Math[__DECODE_0__(0x1a8)]((N - i) / K)) {
+        ans += Math['pow'](Math['floor']((N - i) / K) + 0x1, 0x3);
+      } else {
+        ans++;
+      }
+    }
+  }
+  console[__DECODE_0__(0x1a5)](ans);
+});

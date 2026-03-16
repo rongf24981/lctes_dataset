@@ -1,0 +1,71 @@
+(function (stringArrayFunction, comparisonValue) {
+  var stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      var expression = parseInt(__DECODE_0__(0x1bc)) / 0x1 * (-parseInt(__DECODE_0__(0x1bb)) / 0x2) + parseInt(__DECODE_0__(0x1c0)) / 0x3 + -parseInt(__DECODE_0__(0x1ba)) / 0x4 + parseInt(__DECODE_0__(0x1bd)) / 0x5 * (-parseInt(__DECODE_0__(0x1b4)) / 0x6) + -parseInt(__DECODE_0__(0x1b0)) / 0x7 + -parseInt(__DECODE_0__(0x1b9)) / 0x8 + parseInt(__DECODE_0__(0x1bf)) / 0x9 * (parseInt(__DECODE_0__(0x1af)) / 0xa);
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0xd5123);
+function GCD(a, b) {
+  var m = Math[__DECODE_0__(0x1b3)](a, b);
+  var n = Math['min'](a, b);
+  while (n != 0x0) {
+    var N = n;
+    n = m % n;
+    m = N;
+  }
+  return m;
+}
+function __DECODE_0__(oRUpIj, key) {
+  var stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x1af;
+    var value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(oRUpIj, key);
+}
+var input = require('fs')['readFileSync']('/dev/stdin', __DECODE_0__(0x1b2));
+function __STRING_ARRAY__() {
+  var _0xf9c1d3 = ['max', '2658fKDpdw', 'split', 'push', 'map', 'log', '8669032pBbWYl', '1388108eFpCSb', '2782840MoEXTK', '1vQeQxs', '5155QKjOOv', 'forEach', '324xbKYqF', '1603284zhLodX', '1223070czEIfQ', '5501524fBFuIW', 'shift', 'utf8'];
+  __STRING_ARRAY__ = function () {
+    return _0xf9c1d3;
+  };
+  return __STRING_ARRAY__();
+}
+var Arr = input['trim']()[__DECODE_0__(0x1b5)]('\x0a');
+while (!![]) {
+  var n = Arr['shift']() - 0x0;
+  if (n == 0x0) {
+    break;
+  }
+  var arr = [];
+  for (var I = 0x0; I < n; I++) {
+    var v = Arr[__DECODE_0__(0x1b1)]()['split']('\x20')[__DECODE_0__(0x1b7)](Number);
+    var gcd = GCD(v[0x0], v[0x1]);
+    arr[__DECODE_0__(0x1b6)]([v[0x0] / gcd, v[0x1] / gcd]);
+  }
+  var lcm = 0x1;
+  arr['forEach'](function (v) {
+    var gcd = GCD(v[0x1], lcm);
+    lcm = v[0x1] * lcm / gcd;
+  });
+  arr = arr[__DECODE_0__(0x1b7)](function (v, i) {
+    return v[0x0] * (lcm / v[0x1]);
+  });
+  var lcm = 0x1;
+  arr[__DECODE_0__(0x1be)](function (v) {
+    var gcd = GCD(v, lcm);
+    lcm = v * lcm / gcd;
+  });
+  arr[__DECODE_0__(0x1be)](function (v) {
+    console[__DECODE_0__(0x1b8)](lcm / v);
+  });
+}

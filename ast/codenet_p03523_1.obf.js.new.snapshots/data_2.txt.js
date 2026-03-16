@@ -1,0 +1,65 @@
+'use strict';
+
+(function (stringArrayFunction, comparisonValue) {
+  const stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      const expression = -parseInt(__DECODE_0__(0x12c)) / 0x1 + parseInt(__DECODE_0__(0x130)) / 0x2 + -parseInt(__DECODE_0__(0x136)) / 0x3 * (-parseInt(__DECODE_0__(0x135)) / 0x4) + parseInt(__DECODE_0__(0x137)) / 0x5 + -parseInt(__DECODE_0__(0x138)) / 0x6 + parseInt(__DECODE_0__(0x133)) / 0x7 * (parseInt(__DECODE_0__(0x134)) / 0x8) + -parseInt(__DECODE_0__(0x12e)) / 0x9;
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0xc0e0d);
+let input = require('fs')['readFileSync'](__DECODE_0__(0x139), __DECODE_0__(0x12d));
+input = input[__DECODE_0__(0x12f)]();
+let ans = __DECODE_0__(0x132);
+if (input[0x0] == 'A') {
+  input = input['slice'](0x1);
+}
+if (input[0x0] == 'K') {
+  input = input[__DECODE_0__(0x13a)](0x1);
+}
+function __DECODE_0__(NgBvlV, key) {
+  const stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x12c;
+    let value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(NgBvlV, key);
+}
+if (input[0x0] == 'I') {
+  input = input[__DECODE_0__(0x13a)](0x1);
+}
+if (input[0x0] == 'H') {
+  input = input[__DECODE_0__(0x13a)](0x1);
+}
+function __STRING_ARRAY__() {
+  const _0x1c1198 = ['12KmQXen', '118660garGlV', '6116508zpncAt', '/dev/stdin', 'slice', '697760DRezBb', 'utf8', '2323278jZTBKt', 'trim', '1931962rDQsIy', 'log', 'YES', '33838cLDDGM', '1840oMDulm', '663816ksTrUA'];
+  __STRING_ARRAY__ = function () {
+    return _0x1c1198;
+  };
+  return __STRING_ARRAY__();
+}
+if (input[0x0] == 'A') {
+  input = input['slice'](0x1);
+}
+if (input[0x0] == 'B') {
+  input = input[__DECODE_0__(0x13a)](0x1);
+}
+if (input[0x0] == 'A') {
+  input = input[__DECODE_0__(0x13a)](0x1);
+}
+if (input[0x0] == 'R') {
+  input = input[__DECODE_0__(0x13a)](0x1);
+}
+if (input[0x0] == 'A') {
+  input = input[__DECODE_0__(0x13a)](0x1);
+}
+input == '' ? ans = __DECODE_0__(0x132) : ans = 'NO';
+console[__DECODE_0__(0x131)](ans);

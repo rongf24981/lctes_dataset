@@ -1,0 +1,61 @@
+(function (stringArrayFunction, comparisonValue) {
+  var stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      var expression = -parseInt(__DECODE_0__(0x1c9)) / 0x1 * (-parseInt(__DECODE_0__(0x1cd)) / 0x2) + parseInt(__DECODE_0__(0x1cb)) / 0x3 + parseInt(__DECODE_0__(0x1c6)) / 0x4 * (-parseInt(__DECODE_0__(0x1d0)) / 0x5) + -parseInt(__DECODE_0__(0x1c4)) / 0x6 + parseInt(__DECODE_0__(0x1c3)) / 0x7 * (-parseInt(__DECODE_0__(0x1c8)) / 0x8) + parseInt(__DECODE_0__(0x1d1)) / 0x9 + parseInt(__DECODE_0__(0x1ca)) / 0xa;
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0xa33c5);
+function __STRING_ARRAY__() {
+  var _0x403cfa = ['shift', '4zYLDuh', 'readFileSync', '904NNqPFM', '7288YslDwJ', '17670580YbYaDX', '1554639SKrbZF', 'map', '218UyieLu', 'join', '/dev/stdin', '5875565vlPFhs', '9077130lcmFmU', '80612IeiSFP', '5659194sasElh'];
+  __STRING_ARRAY__ = function () {
+    return _0x403cfa;
+  };
+  return __STRING_ARRAY__();
+}
+function __DECODE_0__(GGpEoa, key) {
+  var stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x1c3;
+    var value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(GGpEoa, key);
+}
+var input = require('fs')[__DECODE_0__(0x1c7)](__DECODE_0__(0x1cf), 'utf8');
+var Arr = input['trim']()['split']('\x0a');
+while (!![]) {
+  var n = Arr[__DECODE_0__(0x1c5)]();
+  if (n == '0') {
+    break;
+  }
+  var arr = Arr[__DECODE_0__(0x1c5)]()['split']('\x20')[__DECODE_0__(0x1cc)](Number);
+  var k = 0x0;
+  var S = [];
+  while (!![]) {
+    for (var i = 0x0; i < arr['length']; i++) {
+      var cnt = 0x0;
+      for (var j = 0x0; j < arr['length']; j++) {
+        if (arr[i] == arr[j]) {
+          cnt++;
+        }
+      }
+      S['push'](cnt);
+    }
+    if (S[__DECODE_0__(0x1ce)]('\x20') == arr[__DECODE_0__(0x1ce)]('\x20')) {
+      break;
+    }
+    arr = S['slice']();
+    S = [];
+    k++;
+  }
+  console['log'](k);
+  console['log'](S[__DECODE_0__(0x1ce)]('\x20'));
+}

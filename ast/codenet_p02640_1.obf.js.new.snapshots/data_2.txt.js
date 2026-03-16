@@ -1,0 +1,41 @@
+(function (stringArrayFunction, comparisonValue) {
+  const stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      const expression = -parseInt(__DECODE_0__(0x13a)) / 0x1 * (-parseInt(__DECODE_0__(0x133)) / 0x2) + parseInt(__DECODE_0__(0x132)) / 0x3 * (-parseInt(__DECODE_0__(0x137)) / 0x4) + parseInt(__DECODE_0__(0x13b)) / 0x5 + parseInt(__DECODE_0__(0x13c)) / 0x6 + parseInt(__DECODE_0__(0x13e)) / 0x7 * (parseInt(__DECODE_0__(0x130)) / 0x8) + parseInt(__DECODE_0__(0x135)) / 0x9 + -parseInt(__DECODE_0__(0x13d)) / 0xa;
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0x9eecb);
+function __STRING_ARRAY__() {
+  const _0x1ea969 = ['log', '89307Fqhara', '4195700gzdEWY', '644928ENkanI', '17413380fXsDfc', '4739wlKWjZ', '1864gpTKvO', 'map', '69579qPbSbV', '26nUBEbJ', 'split', '1351134qxPoUO', 'readFileSync', '4qKYtOx', 'Yes'];
+  __STRING_ARRAY__ = function () {
+    return _0x1ea969;
+  };
+  return __STRING_ARRAY__();
+}
+const input = require('fs')[__DECODE_0__(0x136)]('/dev/stdin', 'utf-8')['split']('\x0a');
+const [X, Y] = input[0x0][__DECODE_0__(0x134)]('\x20')[__DECODE_0__(0x131)](Number);
+let ans = 'No';
+if (X < Y) {
+  const r = Y - X * 0x2;
+  if (r % 0x2 === 0x0 && r / 0x2 <= X) {
+    ans = __DECODE_0__(0x138);
+  }
+}
+function __DECODE_0__(dPYyLD, key) {
+  const stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x130;
+    let value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(dPYyLD, key);
+}
+console[__DECODE_0__(0x139)](ans);

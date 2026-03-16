@@ -1,0 +1,65 @@
+'use strict';
+
+function __DECODE_0__(LDakyj, key) {
+  const stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x116;
+    let value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(LDakyj, key);
+}
+function __STRING_ARRAY__() {
+  const _0x44aedf = ['log', '15868vHiQve', 'slice', '167321zziZXD', '7deonHH', '/dev/stdin', '7941357wfnjXS', 'utf8', '327CepsVD', 'split', '7510drRmyr', '311104oEBbxx', '2282862XnTNDJ', '5005330gjSXOZ', '137SFijHF', 'trim', '690ZzNJti'];
+  __STRING_ARRAY__ = function () {
+    return _0x44aedf;
+  };
+  return __STRING_ARRAY__();
+}
+(function (stringArrayFunction, comparisonValue) {
+  const stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      const expression = -parseInt(__DECODE_0__(0x11c)) / 0x1 * (-parseInt(__DECODE_0__(0x118)) / 0x2) + -parseInt(__DECODE_0__(0x116)) / 0x3 * (parseInt(__DECODE_0__(0x120)) / 0x4) + parseInt(__DECODE_0__(0x11b)) / 0x5 + -parseInt(__DECODE_0__(0x11a)) / 0x6 * (parseInt(__DECODE_0__(0x123)) / 0x7) + parseInt(__DECODE_0__(0x119)) / 0x8 + parseInt(__DECODE_0__(0x125)) / 0x9 + parseInt(__DECODE_0__(0x11e)) / 0xa * (-parseInt(__DECODE_0__(0x122)) / 0xb);
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0x8c373);
+const main = arg => {
+  arg = arg[__DECODE_0__(0x11d)]()[__DECODE_0__(0x117)]('\x0a');
+  const N = parseInt(arg[0x0]);
+  const names = arg[__DECODE_0__(0x121)](0x1, N + 0x1);
+  const p = [0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1, 0x1, 0x1, 0x2];
+  const q = [0x1, 0x1, 0x1, 0x2, 0x2, 0x3, 0x2, 0x2, 0x3, 0x3];
+  const r = [0x2, 0x3, 0x4, 0x3, 0x4, 0x4, 0x3, 0x4, 0x4, 0x4];
+  let march = [0x0, 0x0, 0x0, 0x0, 0x0];
+  for (let i in names) {
+    if (names[i][0x0] === 'M') {
+      march[0x0]++;
+    }
+    if (names[i][0x0] === 'A') {
+      march[0x1]++;
+    }
+    if (names[i][0x0] === 'R') {
+      march[0x2]++;
+    }
+    if (names[i][0x0] === 'C') {
+      march[0x3]++;
+    }
+    if (names[i][0x0] === 'H') {
+      march[0x4]++;
+    }
+  }
+  let answer = 0x0;
+  for (let i = 0x0; i < 0xa; i++) {
+    answer += march[p[i]] * march[q[i]] * march[r[i]];
+  }
+  console[__DECODE_0__(0x11f)](answer);
+};
+main(require('fs')['readFileSync'](__DECODE_0__(0x124), __DECODE_0__(0x126)));

@@ -1,0 +1,46 @@
+function __DECODE_0__(txlRbi, key) {
+  var stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x10c;
+    var value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(txlRbi, key);
+}
+(function (stringArrayFunction, comparisonValue) {
+  var stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      var expression = -parseInt(__DECODE_0__(0x114)) / 0x1 * (parseInt(__DECODE_0__(0x11c)) / 0x2) + parseInt(__DECODE_0__(0x113)) / 0x3 * (parseInt(__DECODE_0__(0x112)) / 0x4) + -parseInt(__DECODE_0__(0x11b)) / 0x5 * (-parseInt(__DECODE_0__(0x11e)) / 0x6) + parseInt(__DECODE_0__(0x10e)) / 0x7 + parseInt(__DECODE_0__(0x10f)) / 0x8 * (parseInt(__DECODE_0__(0x118)) / 0x9) + parseInt(__DECODE_0__(0x11a)) / 0xa * (-parseInt(__DECODE_0__(0x10d)) / 0xb) + -parseInt(__DECODE_0__(0x110)) / 0xc * (parseInt(__DECODE_0__(0x116)) / 0xd);
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0x826ee);
+function __STRING_ARRAY__() {
+  var _0x1ccd1e = ['readFileSync', '11pPvbMA', '7162330NLCuUA', '8zmsqaQ', '60JYAnVU', 'split', '4zcmpTM', '2282109RBLeYy', '1QrlnJV', 'trim', '1351571tXRemG', 'log', '5480883tZmPTs', 'length', '7835590lqqSIw', '122495gGkWtC', '1404452piXSnz', '/dev/stdin', '36OQHEHr'];
+  __STRING_ARRAY__ = function () {
+    return _0x1ccd1e;
+  };
+  return __STRING_ARRAY__();
+}
+function Main(input) {
+  input = input[__DECODE_0__(0x111)]('\x0a');
+  var arr = input[0x1]['split']('\x20')['map'](Number);
+  var m = 0x0;
+  var n = 0x0;
+  for (var i = 0x0; i < arr[__DECODE_0__(0x119)]; i++) {
+    if (arr[i] % 0x2 == 0x0) {
+      m++;
+    } else {
+      n++;
+    }
+  }
+  console[__DECODE_0__(0x117)](n % 0x2 == 0x0 && (n / 0x2 + m) % 0x2 == 0x0 ? 'YES' : 'NO');
+}
+Main(require('fs')[__DECODE_0__(0x10c)](__DECODE_0__(0x11d), 'utf8')[__DECODE_0__(0x115)]());

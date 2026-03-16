@@ -1,0 +1,84 @@
+(function (stringArrayFunction, comparisonValue) {
+  var stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      var expression = parseInt(__DECODE_0__(0x14f)) / 0x1 * (parseInt(__DECODE_0__(0x14b)) / 0x2) + -parseInt(__DECODE_0__(0x158)) / 0x3 * (-parseInt(__DECODE_0__(0x149)) / 0x4) + parseInt(__DECODE_0__(0x14a)) / 0x5 * (-parseInt(__DECODE_0__(0x154)) / 0x6) + parseInt(__DECODE_0__(0x151)) / 0x7 + -parseInt(__DECODE_0__(0x153)) / 0x8 + -parseInt(__DECODE_0__(0x157)) / 0x9 + -parseInt(__DECODE_0__(0x15b)) / 0xa;
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0xce14c);
+var input = require('fs')[__DECODE_0__(0x14e)](__DECODE_0__(0x14c), 'utf8');
+var arr = input[__DECODE_0__(0x159)]()['split']('\x0a');
+var nk = arr['shift']()[__DECODE_0__(0x14d)]('\x20')[__DECODE_0__(0x156)](Number);
+var n = nk[0x0];
+var k = nk[0x1];
+var N = [];
+for (var i = 0x0; i < n; i++) {
+  N[__DECODE_0__(0x152)](arr[__DECODE_0__(0x150)]()[__DECODE_0__(0x14d)]('\x20')[__DECODE_0__(0x156)](Number));
+}
+var dp = [];
+function __STRING_ARRAY__() {
+  var _0x49cede = ['map', '7659954lFAJdi', '1205466neIXzU', 'trim', 'max', '5327910DZBimC', 'forEach', '8unvrum', '1423165TPwyen', '118ZdBQtS', '/dev/stdin', 'split', 'readFileSync', '13321FOwPke', 'shift', '11756206SVADos', 'push', '3774160slynxb', '12nyqdFY', 'log'];
+  __STRING_ARRAY__ = function () {
+    return _0x49cede;
+  };
+  return __STRING_ARRAY__();
+}
+for (var i = 0x0; i <= 0xa; i++) {
+  dp[i] = [];
+}
+var DP = [];
+for (var i = 0x0; i <= 0xa; i++) {
+  DP[i] = [];
+}
+N['forEach'](function (v) {
+  var c = v[0x0];
+  var g = v[0x1];
+  dp[g][__DECODE_0__(0x152)](c);
+});
+dp[__DECODE_0__(0x148)](function (v, i) {
+  v['sort'](function (a, b) {
+    return b - a;
+  });
+  v['forEach'](function (value, j) {
+    if (j == 0x0) {
+      DP[i][j] = dp[i][j];
+    }
+    if (j > 0x0) {
+      dp[i][j] += dp[i][j - 0x1];
+      DP[i][j] = dp[i][j] + (j + 0x1) * j;
+    }
+  });
+});
+var dp = [];
+function __DECODE_0__(UiThCI, key) {
+  var stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x148;
+    var value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(UiThCI, key);
+}
+for (var i = 0x0; i <= n; i++) {
+  dp[i] = 0x0;
+}
+function bomb(cnt, start, sum) {
+  dp[cnt] = Math[__DECODE_0__(0x15a)](dp[cnt], sum);
+  if (sum == k) {
+    return;
+  }
+  for (var i = start; i < DP['length']; i++) {
+    DP[i][__DECODE_0__(0x148)](function (v, index) {
+      bomb(cnt + (index + 0x1), i + 0x1, sum + v);
+    });
+  }
+}
+bomb(0x0, 0x0, 0x0);
+console[__DECODE_0__(0x155)](dp[k]);

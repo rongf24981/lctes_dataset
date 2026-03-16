@@ -1,0 +1,70 @@
+(function (stringArrayFunction, comparisonValue) {
+  var stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      var expression = parseInt(__DECODE_0__(0x147)) / 0x1 * (parseInt(__DECODE_0__(0x13b)) / 0x2) + -parseInt(__DECODE_0__(0x13a)) / 0x3 * (-parseInt(__DECODE_0__(0x14e)) / 0x4) + parseInt(__DECODE_0__(0x143)) / 0x5 * (parseInt(__DECODE_0__(0x14c)) / 0x6) + parseInt(__DECODE_0__(0x148)) / 0x7 + -parseInt(__DECODE_0__(0x142)) / 0x8 * (-parseInt(__DECODE_0__(0x14d)) / 0x9) + parseInt(__DECODE_0__(0x145)) / 0xa + -parseInt(__DECODE_0__(0x14b)) / 0xb;
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0xbd1e5);
+var input = require('fs')['readFileSync'](__DECODE_0__(0x141), __DECODE_0__(0x14a));
+function __STRING_ARRAY__() {
+  var _0x7d39f1 = ['filter', 'split', '/dev/stdin', '5387296tJEYpj', '5YJNsSN', 'log', '14015170asSktQ', 'shift', '20266imWkJa', '8643124siaued', 'length', 'utf8', '54596916BbiWqa', '2266674JzhRYf', '18tuIOuC', '52VtvMDl', '154113CUhAvR', '70NUCqjN', 'push', 'slice', 'map'];
+  __STRING_ARRAY__ = function () {
+    return _0x7d39f1;
+  };
+  return __STRING_ARRAY__();
+}
+var arr = input['trim']()[__DECODE_0__(0x140)]('\x0a');
+function __DECODE_0__(alBBiF, key) {
+  var stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x13a;
+    var value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(alBBiF, key);
+}
+while (!![]) {
+  var n = arr['shift']() - 0x0;
+  if (n == 0x0) {
+    break;
+  }
+  var nww = [];
+  for (var i = 0x0; i < n; i++) {
+    nww[i] = arr[__DECODE_0__(0x146)]()[__DECODE_0__(0x140)]('\x20');
+  }
+  nww = nww[__DECODE_0__(0x13e)](v => [v[0x0], v[0x1] - 0x0, v[0x2] - 0x0]);
+  var max = 0x0;
+  var ans = [];
+  function bomb(arrA, arrB, sum, g) {
+    if (arrB[__DECODE_0__(0x149)] == 0x0) {
+      if (max < g / sum) {
+        ans = arrA;
+        max = g / sum;
+      }
+      return;
+    }
+    arrB['forEach'](v => {
+      if (sum <= nww[v][0x2]) {
+        var a = arrA['concat'](v);
+        var b = arrB[__DECODE_0__(0x13d)]()[__DECODE_0__(0x13f)](n => v != n);
+        var c = sum + nww[v][0x1];
+        var d = g + nww[v][0x1] * (arrA[__DECODE_0__(0x149)] + 0x1);
+        bomb(a, b, c, d);
+      }
+    });
+  }
+  var bombArr = [];
+  for (var i = 0x0; i < n; i++) {
+    bombArr[__DECODE_0__(0x13c)](i);
+  }
+  bomb([], bombArr, 0x0, 0x0);
+  console[__DECODE_0__(0x144)](ans[__DECODE_0__(0x13e)](v => nww[v][0x0])['reverse']()['join']('\x0a'));
+}

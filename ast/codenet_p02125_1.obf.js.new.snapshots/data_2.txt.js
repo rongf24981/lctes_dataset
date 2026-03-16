@@ -1,0 +1,41 @@
+(function (stringArrayFunction, comparisonValue) {
+  var stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      var expression = parseInt(__DECODE_0__(0x1e9)) / 0x1 + -parseInt(__DECODE_0__(0x1df)) / 0x2 + -parseInt(__DECODE_0__(0x1eb)) / 0x3 + parseInt(__DECODE_0__(0x1e8)) / 0x4 + -parseInt(__DECODE_0__(0x1ec)) / 0x5 + -parseInt(__DECODE_0__(0x1dd)) / 0x6 * (-parseInt(__DECODE_0__(0x1e1)) / 0x7) + parseInt(__DECODE_0__(0x1ee)) / 0x8 * (parseInt(__DECODE_0__(0x1e3)) / 0x9);
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0xe0fcc);
+var input = require('fs')[__DECODE_0__(0x1e4)](__DECODE_0__(0x1ed), __DECODE_0__(0x1e0));
+function __STRING_ARRAY__() {
+  var _0x33fc14 = ['29496xEDCoJ', 'split', '3601774pAraHG', 'utf8', '1533OrXPGU', 'log', '9koegZk', 'readFileSync', 'shift', 'max', 'toString', '2069840eBfIuP', '696999GdAErT', 'map', '2471853cKalgk', '3791305zKtTIY', '/dev/stdin', '16108672SNOtna'];
+  __STRING_ARRAY__ = function () {
+    return _0x33fc14;
+  };
+  return __STRING_ARRAY__();
+}
+var arr = input['trim']()[__DECODE_0__(0x1de)]('\x0a');
+var n = arr[__DECODE_0__(0x1e5)]() - 0x0;
+var max = 0x0;
+for (var i = 0x1; i <= n; i++) {
+  var s = (i[__DECODE_0__(0x1e7)](0x2) + '')[__DECODE_0__(0x1de)]('')[__DECODE_0__(0x1ea)](Number);
+  var sum = s['reduce']((a, b) => a + b);
+  max = Math[__DECODE_0__(0x1e6)](max, sum);
+}
+function __DECODE_0__(jwvGka, key) {
+  var stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x1dd;
+    var value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(jwvGka, key);
+}
+console[__DECODE_0__(0x1e2)](max);

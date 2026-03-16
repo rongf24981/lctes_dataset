@@ -1,0 +1,60 @@
+(function (stringArrayFunction, comparisonValue) {
+  var stringArray = stringArrayFunction();
+  while (!![]) {
+    try {
+      var expression = parseInt(__DECODE_0__(0x105)) / 0x1 + -parseInt(__DECODE_0__(0x107)) / 0x2 + -parseInt(__DECODE_0__(0x111)) / 0x3 + parseInt(__DECODE_0__(0x106)) / 0x4 * (parseInt(__DECODE_0__(0x104)) / 0x5) + -parseInt(__DECODE_0__(0x10a)) / 0x6 + parseInt(__DECODE_0__(0x108)) / 0x7 + parseInt(__DECODE_0__(0x10b)) / 0x8 * (parseInt(__DECODE_0__(0x10f)) / 0x9);
+      if (expression === comparisonValue) {
+        break;
+      } else {
+        stringArray['push'](stringArray['shift']());
+      }
+    } catch (e) {
+      stringArray['push'](stringArray['shift']());
+    }
+  }
+})(__STRING_ARRAY__, 0x664de);
+var input = require('fs')[__DECODE_0__(0x10e)](__DECODE_0__(0x10c), __DECODE_0__(0x113));
+function __DECODE_0__(fJihNS, key) {
+  var stringArray = __STRING_ARRAY__();
+  __DECODE_0__ = function (index, key) {
+    index = index - 0x104;
+    var value = stringArray[index];
+    return value;
+  };
+  return __DECODE_0__(fJihNS, key);
+}
+var arr = input[__DECODE_0__(0x109)]()[__DECODE_0__(0x114)]('\x0a');
+function __STRING_ARRAY__() {
+  var _0x31d278 = ['trim', '3496782DGCMWF', '5813072cjKDMz', '/dev/stdin', 'map', 'readFileSync', '18JcUBDo', 'shift', '2368224AyqCSI', 'length', 'utf8', 'split', '3620rnXnHY', '250491ZIrUVG', '1108ikuIZG', '1084536LYpvmq', '3004428YZWnqd'];
+  __STRING_ARRAY__ = function () {
+    return _0x31d278;
+  };
+  return __STRING_ARRAY__();
+}
+arr = arr[__DECODE_0__(0x10d)](v => v['split']('\x20')['map'](Number));
+var n = arr[__DECODE_0__(0x110)]();
+var c = arr[__DECODE_0__(0x110)]();
+var q = arr[__DECODE_0__(0x110)]();
+var apple = [];
+for (var i = 0x0; i <= n; i++) {
+  apple[i] = 0x0;
+}
+var ans = 0x0;
+for (var i = 0x0; i < arr[__DECODE_0__(0x112)]; i++) {
+  var [t, x, d] = arr[i];
+  if (t == 0x1) {
+    apple[x] += d;
+    if (c[x - 0x1] < apple[x]) {
+      ans = x;
+      break;
+    }
+  } else {
+    if (apple[x] < d) {
+      ans = x;
+      break;
+    } else {
+      apple[x] -= d;
+    }
+  }
+}
+console['log'](ans);
